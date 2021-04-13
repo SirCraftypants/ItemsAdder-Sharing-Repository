@@ -1,0 +1,53 @@
+info:
+  namespace: customitems
+anvil_repair:
+    gray_scuba_mask:
+      permission:
+      ingredient: EMERALD
+      item: customitems:gray_scuba_mask
+items:
+  gray_scuba_mask:
+    display_name: Gray Scuba Mask
+    permission: ia.head 
+    lore:
+    - '&6[ &eSpecial effects &6]'
+    - '&9Water Breathing (Like a fish in Water)'   
+    resource:
+      material: FEATHER
+      generate: false
+      model_path: item/gray_scuba_mask      
+    behaviours:
+      hat: true
+    durability:
+      max_custom_durability: 1500
+    attribute_modifiers:
+      head:
+        armor: 1
+        armorToughness: 2         
+    events:
+      wear:
+        play_sound:
+          name: customitems:ambient.creepy3
+          volume: 1
+          pitch: 1
+        potion_effect:
+          type: WATER_BREATHING
+          duration: 1000000
+          amplifier: 0
+        play_particle:
+          name: ENCHANTMENT_TABLE
+      unwear:
+        play_sound:
+          name: customitems:ambient.creepy3
+          volume: 1
+          pitch: 1
+        potion_effect:
+          type: WATER_BREATHING
+          duration: 100
+          amplifier: 0
+        decrement_durability:
+          amount: 10
+        remove_potion_effect:
+          type: WATER_BREATHING
+        play_particle:
+          name: ENCHANTMENT_TABLE
