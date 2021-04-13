@@ -1,0 +1,32 @@
+info:
+  namespace: customitems
+recipes:
+  crafting_table:
+    cold_iron_tower_shield_wide_spiked:
+      permission: customitems.cold_iron_tower_shield_wide_spiked
+      enabled: true
+      pattern:
+      - III
+      - ICI
+      - III
+      ingredients:
+        I: IRON_INGOT
+        C: ICE
+      result:
+        item: customitems:cold_iron_tower_shield_wide_spiked
+        amount: 1
+  anvil_repair:
+    cold_iron_tower_shield_wide_spiked:
+      permission:
+      ingredient: IRON_BLOCK
+      item: customitems:cold_iron_tower_shield_wide_spiked
+items:
+  cold_iron_tower_shield_wide_spiked:
+    display_name: Cold Iron Tower Shield
+    permission: cold_iron_tower_shield_wide_spiked
+    resource:
+      material: SHIELD
+      generate: false
+      model_path: item/cold_iron_tower_shield_wide_spiked
+    durability:
+      max_custom_durability: 1850
