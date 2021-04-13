@@ -1,0 +1,33 @@
+info:
+  namespace: customitems
+recipes:
+  crafting_table:
+    lime_oak_chair:
+      permission: customitems.lime_oak_chair
+      enabled: true
+      pattern:
+      - PWX
+      - PPP
+      - PWP
+      ingredients:
+        P: OAK_PLANKS
+        W: LIME_WOOL
+      result:
+        item: customitems:lime_oak_chair
+        amount: 1
+items:
+  lime_oak_chair:
+    display_name: Lime Oak Chair
+    permission: customitems.lime_oak_chair
+    resource:
+      material: OAK_WOOD
+      generate: true
+      model_path: item/lime_oak_chair
+    behaviours:
+      furniture:
+        gravity: false
+        fixed_rotation: true
+        small_hitbox: true
+        solid: true        
+      furniture_sit:
+        sit_height: 0.45
