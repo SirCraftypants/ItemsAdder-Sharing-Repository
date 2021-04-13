@@ -36,4 +36,4 @@ items:
           execute_commands:
             first_cmd:
               as_console: false
-              command: 'enchanter'
+              command: 'enchanter' 
