@@ -1,0 +1,39 @@
+info:
+  namespace: customitems
+recipes:
+  crafting_table:
+    enchanters_table:
+      permission: customitems.enchanters_table
+      enabled: true
+      pattern:
+      - BIB
+      - SLS
+      - SSS
+      ingredients:
+        L: LAPIS_BLOCK
+        B: BLACK_WOOL
+        I: LIGHT_BLUE_WOOL
+        S: STONE
+      result:
+        item: customitems:enchanters_table
+        amount: 1
+items:
+  enchanters_table:
+    display_name: Enchanters Table
+    resource:
+      material: OAK_WOOD
+      generate: false
+      model_path: item/enchanters_table
+    behaviours:
+      furniture:
+        gravity: true
+        fixed_rotation: true
+        small_hitbox: true
+        solid: true
+    events:
+      placed_armorstand:
+        interact:
+          execute_commands:
+            first_cmd:
+              as_console: false
+              command: 'enchanter'
