@@ -1,0 +1,21 @@
+info:
+  namespace: customitems           
+  anvil_repair:
+    magma_sword:
+      permission:
+      ingredient: EMERALD
+      item: customitems:magma_sword
+items:
+  magma_sword:
+    display_name: '&aMagma Sword'
+    permission:
+    resource:
+      material: STONE_SWORD
+      generate: true
+      model_path: item/weapons/magma_sword
+    durability:
+      max_custom_durability: 2980
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 8.0
+        attackSpeed: 2.0
