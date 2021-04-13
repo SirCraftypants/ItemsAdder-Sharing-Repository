@@ -19,8 +19,7 @@ Here you can share your own configuration files or model files (do not include c
 
 
 ### How to create files directly on github
-1. Fork this repository using the fork buttom (top right of the screen). Do this the first time ever you want to contribute, next time it's not needed since you will already have your own fork of this repository.
-2. Click on `Add file->Create new file`
+1. Click on `Add file->Create new file`
 
 ![img](https://user-images.githubusercontent.com/27242001/114598515-44e5c800-9c92-11eb-902f-035cb52844a8.png)
 
