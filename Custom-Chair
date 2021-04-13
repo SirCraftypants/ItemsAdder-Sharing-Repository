@@ -30,4 +30,4 @@ items:
         small_hitbox: true
         solid: true        
       furniture_sit:
-        sit_height: 0.45
+        sit_height: 0.45 
