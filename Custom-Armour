@@ -1,0 +1,39 @@
+info:
+  namespace: customitems
+recipes:
+  crafting_table:
+    dark_chest:
+      permission: customitems.dark_chest
+      enabled: true
+      pattern:
+      - WIW
+      - III
+      - OIO
+      ingredients:
+        O: BLACK_WOOL
+        W: PURPLE_WOOL
+        I: IRON_INGOT        
+      result:
+        item: customitems:dark_chest
+        amount: 1  
+  anvil_repair:
+    dark_chest:
+      permission:
+      ingredient: EMERALD
+      item: customitems:dark_chest
+items: 
+  dark_chest:
+    display_name: Dark Chestplate
+    permission: dark-chest
+    resource:
+      generate: true     
+    durability:
+      max_custom_durability: 400
+    specific_properties:
+      armor:
+        slot: chest
+        color: 05000f
+    attribute_modifiers:
+      chest:
+        armor: 8
+        armorToughness: 3     
