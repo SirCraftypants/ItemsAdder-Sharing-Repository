@@ -1,0 +1,23 @@
+This is the Config for a Textured Mana Potion
+
+  minor_mana_potion:
+    display_name: Minor Mana Potion
+    resource:
+      material: POTION
+      generate: true
+      textures:
+      - item/minor_mana_potion.png
+    specific_properties:
+      potion:
+        type: WATER
+        color: WHITE        
+    item_flags:
+    - HIDE_POTION_EFFECTS
+    events:
+      drink:
+       increment_player_stat:
+          name: mana
+          amount: 5 
+       give_item:
+          item: GLASS_BOTTLE
+          amount: 1 
