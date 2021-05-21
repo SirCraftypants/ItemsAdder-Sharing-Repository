@@ -1,0 +1,41 @@
+Here is the Config for a Staff that can be used in Melee like a Sword and can cast ranged magic 
+
+  staff:
+    display_name: '&eStaff'
+    lore:
+    - '&bRange Damage: 4'
+    - '&bDistance: 10'
+    - '&bMana Cost: 0.5    
+    permission:
+    resource:
+      material: STONE_SWORD
+      generate: true
+      model_path: item/weapons/staff
+    durability:
+      max_custom_durability: 2000
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 6.5
+        attackSpeed: 2.0 
+    blocked_enchants:
+    - ALL  
+    events_needed_player_stats:
+      mana: ">0.5"     
+    events:
+      interact:               
+        right:
+          damage_entity_in_sight:
+            damage: 4
+            distance: 10       
+          play_sound:
+            name: minecraft:entity.ender_dragon.shoot
+            volume: 2
+            pitch: 1           
+          shoot_particle:
+            name: SPELL_WITCH
+            distance: 10             
+          decrement_durability:
+            amount: 20
+          decrement_player_stat:
+            name: mana
+            amount: 0.5         
