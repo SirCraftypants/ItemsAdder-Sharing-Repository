@@ -1,4 +1,4 @@
-Here is the Config for a Staff that can be used in Melee like a Sword and can cast ranged magic 
+Here is the Config for a Staff that can be used in Melee like a Sword and can cast ranged magic, this will require a Model Staff although could be altered for a textures staff.
 
   staff:
     display_name: '&eStaff'
