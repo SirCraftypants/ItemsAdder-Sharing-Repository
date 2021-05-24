@@ -1,5 +1,6 @@
 info:
-  namespace: customitems           
+  namespace: customitems 
+item:  
   minor_mana_potion:
     display_name: Minor Mana Potion
     resource:
