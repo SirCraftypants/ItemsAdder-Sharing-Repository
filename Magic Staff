@@ -1,11 +1,11 @@
 info:
   namespace: customitems  
   anvil_repair:
-item:
     staff:
       permission:
       ingredient: OAK_WOOD
       item: customitems:staff
+item:      
   staff:
     display_name: '&eStaff'
     lore:
