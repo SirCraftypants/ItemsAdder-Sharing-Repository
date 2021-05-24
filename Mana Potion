@@ -1,5 +1,6 @@
-This is the Config for a Textured Mana Potion
-
+#This is the Config for a Textured Mana Potion
+info:
+  namespace: customitems           
   minor_mana_potion:
     display_name: Minor Mana Potion
     resource:
