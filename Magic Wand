@@ -1,5 +1,5 @@
-This is a Magic Wand using a Textured Stick, can be changed to work with a Model Wand.
-
+info:
+  namespace: customitems    
 wand_of_power_2:
     display_name: '&9Wand of Power II'
     permission: wand2
