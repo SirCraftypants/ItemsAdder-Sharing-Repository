@@ -1,5 +1,10 @@
 info:
-  namespace: customitems    
+  namespace: customitems  
+  anvil_repair:
+    wand_of_power_2:
+      permission:
+      ingredient: OAK_WOOD
+      item: customitems:wand_of_power_2
 wand_of_power_2:
     display_name: '&9Wand of Power II'
     permission: wand2
