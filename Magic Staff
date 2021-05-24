@@ -1,5 +1,11 @@
-Here is the Config for a Staff that can be used in Melee like a Sword and can cast ranged magic, this will require a Model Staff although could be altered for a textures staff.
-
+info:
+  namespace: customitems  
+  anvil_repair:
+item:
+    staff:
+      permission:
+      ingredient: OAK_WOOD
+      item: customitems:staff
   staff:
     display_name: '&eStaff'
     lore:
