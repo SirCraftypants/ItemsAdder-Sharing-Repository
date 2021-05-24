@@ -1,4 +1,3 @@
-#This is the Config for a Textured Mana Potion
 info:
   namespace: customitems           
   minor_mana_potion:
