@@ -1,0 +1,84 @@
+info:
+  namespace: customitems           
+  anvil_repair:
+    blue_lightsaber_off:
+      permission:
+      ingredient: EMERALD
+      item: customitems:blue_lightsaber_off
+items:
+  blue_lightsaber_off:
+    display_name: Blue Lightsaber
+    permission: blue_lightsaber_off
+    resource:
+      material: STONE_SWORD
+      generate: true
+      model_path: item/blue_lightsaber_off
+    durability:
+      max_custom_durability: 2562
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 8.0
+        attackSpeed: 1.2
+    events:
+      attack:
+        play_sound:
+          name: customitems:items.lightsaber_attack
+          volume: 1
+          pitch: 1
+      interact:
+        right:
+          play_sound:
+            name: customitems:items.lightsaber_on
+            volume: 1
+            pitch: 1
+          replace_properties:
+            custom_model_data:
+              copy_from_item: customitems:blue_lightsaber_on
+              restorable: true            
+        right_shift:
+          play_sound:
+            name: customitems:items.lightsaber_off
+            volume: 1
+            pitch: 1
+          replace_properties:
+            custom_model_data:
+              copy_from_item: customitems:blue_lightsaber_off
+              restorable: true            
+  blue_lightsaber_on:
+    display_name: Blue Lightsaber
+    permission: blue_lightsaber_on
+    resource:
+      material: STONE_SWORD
+      generate: true
+      model_path: item/blue_lightsaber_on
+    durability:
+      max_custom_durability: 2562
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 8.0
+        attackSpeed: 1.2
+    events:
+      attack:
+        play_sound:
+          name: customitems:items.lightsaber_attack
+          volume: 1
+          pitch: 1
+      interact:
+        right:
+          play_sound:
+            name: customitems:items.lightsaber_on
+            volume: 1
+            pitch: 1
+          replace_properties:
+            custom_model_data:
+              copy_from_item: customitems:blue_lightsaber_on
+              restorable: true            
+        right_shift:
+          play_sound:
+            name: customitems:items.lightsaber_off
+            volume: 1
+            pitch: 1 
+          replace_properties:
+            custom_model_data:
+              copy_from_item: customitems:blue_lightsaber_off
+              restorable: true            
