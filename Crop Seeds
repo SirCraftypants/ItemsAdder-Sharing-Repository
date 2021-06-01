@@ -1,0 +1,91 @@
+info:
+  namespace: customitems
+recipes:
+  crafting_table:
+    raspberry_seed:
+      permission: customitems.seeds
+      enabled: true
+      pattern:
+      - XXX
+      - XOX
+      - XXX
+      ingredients:
+        O: customitems:raspberry
+      result:
+        item: customitems:raspberry_seed
+        amount: 2
+    tomato_seeds:
+      permission: customitems.seeds
+      enabled: true
+      pattern:
+      - XXX
+      - XOX
+      - XXX
+      ingredients:
+        O: customitems:tomato
+      result:
+        item: customitems:tomato_seeds
+        amount: 2
+loots:
+  blocks:
+    grass:
+      type: GRASS
+      items:
+        raspberry_seed:
+          item: customitems:raspberry_seed
+          min_amount: 1
+          max_amount: 2
+          chance: 2            
+    tall_grass:
+      type: TALL_GRASS
+      items:
+        tomato_seeds:
+          item: customitems:tomato_seeds
+          min_amount: 1
+          max_amount: 2
+          chance: 2    
+items:   
+  tomato_seeds:
+    display_name: Tomato Seeds
+    permission: tomato_seeds
+    resource:
+      material: WHEAT_SEEDS
+      generate: true
+      textures:
+      - item/tomato_seeds.png
+    specific_properties:
+      seed:
+        crop_block: SWEET_BERRY_BUSH
+        results:
+          result_1:
+            item: customitems:tomato
+            min_amount: 1
+            max_amount: 2
+            chance: 80
+          result_2:
+            item: customitems:tomato_seeds
+            min_amount: 1
+            max_amount: 1
+            chance: 60   
+  raspberry_seed:
+    display_name: Raspberry Seeds
+    permission: raspberry_seed
+    resource:
+      material: WHEAT_SEEDS
+      generate: true
+      textures:
+      - item/raspberry_seed.png
+    specific_properties:
+      seed:
+        crop_block: SWEET_BERRY_BUSH
+        results:
+          result_1:
+            item: customitems:raspberry
+            min_amount: 1
+            max_amount: 2
+            chance: 80 
+          result_2:
+            item: customitems:raspberry_seed
+            min_amount: 1
+            max_amount: 1
+            chance: 60                    
